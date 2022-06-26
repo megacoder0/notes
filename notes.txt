@@ -42,4 +42,29 @@ mydict ={"home":"place where every one feels comfortable",
 print(mydict["game"])
 ---Updating the dictionary------
 mydict["new variable"]="any value" (adds to the dictonary)
+++++++++++++++++++++++++++++++++++++++++++
+GIT HUB TOKEN
+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
 
++++++++++++++++++++++++++++++++++++++++++++
+squaring program
+def square(x): # defining a square function
+    return x * x # what it will return at the end
+
+for i in range(10): # loop for 0-9 squaring
+    print(f"the square of {i} is {square(i)}")
+
+------------------additon info-------
+# we can seperate file in 2 and import later
+=================
+python1.py (file)
+def square(x):
+    return x * x
+    =============== this is a way to import one defined fucnion to another file 
+    connecting files together============
+py2.py
+form python1 import square
+
+for i in range(10):
+    print(f"the square of {i} is {square(i)}")
+------------------------------------------------
