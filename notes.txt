@@ -1,0 +1,45 @@
+#python
+
+- Strings 
+strings.append("name")#adds a name in a list 
+stings.sort()#manges in a ahphabetic order.
+------------------------------
+
+-creating a set 
+s = set()#an empty set is created 
+s.add(1)
+s.add(2)
+s.add(3)
+s.add(1)
+s.remove(1)# removes the number 1 for the set
+ # you cannot add the same data twice
+
+print(s)
+print(F"this is a formated{any variable} string")
+
+--------------------------------------
+for (case)
+for i in [1,2,3,4,5]
+print(i)# this prints all the number in i
+----------------------------------
+to print 100 numbers
+for i in range (100)
+ print(i)
+ -------------------------------
+ to print names
+ names = ["manish","anish","ranish"]
+ for name in names:
+ print(name) # print names form a string
+ ------------------------------------
+ print the single character in string
+ name = "perosorosor"
+for character in name:
+    print(character)
+    -------------------------------------
+# while declaring dictionary
+mydict ={"home":"place where every one feels comfortable",
+"game": "a beautiful creation of men"}
+print(mydict["game"])
+---Updating the dictionary------
+mydict["new variable"]="any value" (adds to the dictonary)
+
