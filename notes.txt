@@ -58,6 +58,8 @@ for i in range(10): # loop for 0-9 squaring
 # we can seperate file in 2 and import later
 =================
 python1.py (file)
+
+
 def square(x):
     return x * x
     =============== this is a way to import one defined fucnion to another file 
@@ -68,3 +70,16 @@ form python1 import square
 for i in range(10):
     print(f"the square of {i} is {square(i)}")
 ------------------------------------------------
+or 
+your can do this ..
+--
+python1.py
+def square(x):
+    return x*x
+
+---
+py2.py
+import python01 (name of the another linked fille)
+for i in range(10):
+        print(f"the multiple of {i} x {python01.square(i)}")
+
