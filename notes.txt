@@ -143,3 +143,24 @@ def mmf():
 mmf()# this command is needed to put print fuction in  the  f() place up 
 hello()
 -------------------------------------------------------------
+from sympy import per
+
+# dicta = [
+#     {"name": "manish", "house": "ganesh mandir"},
+#     {"name": "nish" , "house" :"bora mah sutxa "},
+#     {"name": "anish" , "house": "ahal mah sutxa"}
+# ]
+# def na(person):
+#     return person["name"] # this will give output with names varibile in dictionay  form a-z
+# dicta.sort(key = na)
+# print(dicta)
+
+# another way but same program
+dicta = [
+    {"name": "manish", "house": "ganesh mandir"},
+    {"name": "nish" , "house" :"bora mah sutxa "},
+    {"name": "anish" , "house": "ahal mah sutxa"}
+]
+
+dicta.sort(key = lambda person: person["name"])#lamda function helps to sort the dictionay with names or variables that are assisted to them
+print(dicta)
