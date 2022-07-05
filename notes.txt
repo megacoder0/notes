@@ -44,8 +44,7 @@ print(mydict["game"])
 mydict["new variable"]="any value" (adds to the dictonary)
 ++++++++++++++++++++++++++++++++++++++++++
 GIT HUB TOKEN
-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
-
+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
 +++++++++++++++++++++++++++++++++++++++++++
 squaring program
 def square(x): # defining a square function
@@ -123,3 +122,24 @@ for person in people:
         print(f"we have added {person} to the flight")
     else:
         print(f"no seats available for {person}")
+-------------------------------------------------------------------------------------
+# decorator funtion ---->
+def announce(f):
+    def wrapper():
+        print("this is going to run.........")
+        f()# this replaced by the function below @ announce
+        print("done running")
+        
+    return wrapper
+
+@announce # a way to concinate in to variables
+def hello():
+  print("hello mother fker")
+
+@announce
+def mmf():
+    print("da fk is that")
+
+mmf()# this command is needed to put print fuction in  the  f() place up 
+hello()
+-------------------------------------------------------------
