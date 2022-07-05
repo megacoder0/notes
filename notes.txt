@@ -94,4 +94,32 @@ class point():
 p = point(2, 8) # setting point values
 print(p.a)
 print(p.b)# printing out the values under point(P) p.variables
-        
+ ------------------------------------------------
+ class fucnion
+ #Making a program that adds passnger to a flight
+from sre_constants import SUCCESS
+from matplotlib.style import available
+
+
+class Flight(): # this a fuction or declaring a Flight variable
+    def __init__(self,capacity):# __init__ self calls or runs itself in the program
+        self.capacity = capacity
+        self.travaler =[] # empty list for names
+
+    def add_travaler(self,name):# adding a(add_travaler)function
+        if not self.available_seats():
+           return False
+        self.travaler.append(name)
+        return True
+    
+    def available_seats(self):
+        return self.capacity - len(self.travaler)# this function is doing 5-6 number of names people 
+
+flight =Flight(5) # the capacity for flight 
+people =["manish","hari","min","nischal","nirdosh","puri"] # ading names or people in flight
+for person in people:
+    success = flight.add_travaler(person)
+    if success:
+        print(f"we have added {person} to the flight")
+    else:
+        print(f"no seats available for {person}")
