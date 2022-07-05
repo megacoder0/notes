@@ -83,3 +83,15 @@ import python01 (name of the another linked fille)
 for i in range(10):
         print(f"the multiple of {i} x {python01.square(i)}")
 
+
+
+#object oreinted 
+# class decleration and storing number
+class point():
+    def __init__(self,int1 ,int2) :
+        self.a = int1 
+        self.b = int2
+p = point(2, 8) # setting point values
+print(p.a)
+print(p.b)# printing out the values under point(P) p.variables
+        
