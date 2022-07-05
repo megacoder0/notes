@@ -164,3 +164,21 @@ dicta = [
 
 dicta.sort(key = lambda person: person["name"])#lamda function helps to sort the dictionay with names or variables that are assisted to them
 print(dicta)
+--------------------------------------------------------------------------
+# error correction or avoding errors
+from numpy import result_type
+import sys
+try:
+    x = int(input("x = "))
+    y = int(input("y = "))
+except ValueError:
+        print("please use number only")
+        sys.exit(1)
+try:
+    
+    result= x / y
+except ZeroDivisionError:
+    print("cannot be divided by Zero(0)")
+    sys.exit(1)
+print(f"{x}/{y} = {result}")
+-----------------------------------------------------------
