@@ -44,7 +44,7 @@ print(mydict["game"])
 mydict["new variable"]="any value" (adds to the dictonary)
 ++++++++++++++++++++++++++++++++++++++++++
 GIT HUB TOKEN
-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
+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
 +++++++++++++++++++++++++++++++++++++++++++
 squaring program
 def square(x): # defining a square function
