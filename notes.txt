@@ -44,7 +44,7 @@ print(mydict["game"])
 mydict["new variable"]="any value" (adds to the dictonary)
 ++++++++++++++++++++++++++++++++++++++++++
 GIT HUB TOKEN
-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
+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
 +++++++++++++++++++++++++++++++++++++++++++
 squaring program
 def square(x): # defining a square function
@@ -213,3 +213,4 @@ Starting development server at http://127.0.0.1:8000/ # this is the server ip
 ----------------------------------------------------------------------
 (nirvana㉿NIRVANA)-[~/lecture3]
 └─$ python manage.py startapp app1 # creating a app 
+ i am back
