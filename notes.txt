@@ -212,5 +212,68 @@ Starting development server at http://127.0.0.1:8000/ # this is the server ip
 
 ----------------------------------------------------------------------
 (nirvana㉿NIRVANA)-[~/lecture3]
-└─$ python manage.py startapp app1 # creating a app 
- i am back
+└─$ python manage.py startapp hello # creating a app 
+-after creating app 
+1- mention the name of app in the settings of the project 
+# Application definition
+
+INSTALLED_APPS = [
+    'hello', # like this
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+---------------------------------------------------------
+2.the create a views.py file to make a interface of what  the site may look like
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path("", views.index),
+    path("manish", views.manish, name="manish"),
+]
+---------------------------------------------------------
+3.and in the same hello derectory go to views.py
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+
+
+def index(request):# this is like a home page 
+    return HttpResponse("hello,world")
+
+
+def manish(request): # if /manish is typed in the url the it renders the HttpResponse
+    return HttpResponse("hello manish sir!")
+
+----------------------------------------------------------------
+4. finally add your project app in the url.py file in the project
+
+"""lecture3 URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from xml.etree.ElementInclude import include
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('hello/', include("hello.urls")), # this <><><>
+
+]
